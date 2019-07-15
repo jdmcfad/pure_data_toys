@@ -1,0 +1,25 @@
+#N canvas 1479 535 450 300 10;
+#X obj 96 107 oversampled-phasor~;
+#X obj 222 107 oversampled-phasor~;
+#X obj 233 21 loadbang;
+#X obj 193 165 -~;
+#X obj 182 24 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 64 6 freq;
+#X obj 193 266 outlet~;
+#X obj 208 198 *~ 0.22;
+#X msg 232 53 0.5;
+#X msg 279 52 0;
+#X obj 62 28 inlet~;
+#X connect 0 0 3 0;
+#X connect 1 0 3 1;
+#X connect 2 0 8 0;
+#X connect 2 0 9 0;
+#X connect 3 0 7 0;
+#X connect 4 0 8 0;
+#X connect 4 0 9 0;
+#X connect 7 0 6 0;
+#X connect 8 0 0 1;
+#X connect 9 0 1 1;
+#X connect 10 0 1 0;
+#X connect 10 0 0 0;
